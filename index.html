@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+     /* fuentes*/
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Spartan:wght@500;700&display=swap');
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="cont_gral">
+      <div class="sections_ mrg_1"><!-- section 1 -->
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </div>
+      <div class="sections_ mrg2"><!-- section 2-->
+          <div class="cont_slider">
+            <p class="pageviews"><span id="pgviews">10K</span> Pageviews</p>
+            <div class="slider_wrppr"><!--Slider  -->
+              <input type="range" min="1" max="100" value="1" class="slider" id="slider_1" onclick="interacoes()">
+            </div>
+            <p id="price_style"> <span id="price">$8</span> /month</p>
+          </div>
+          <div class="cont_switch">
+            <p>Monthly Billing</p>
+            <label class="switch_toggle"><!--Switch toggle -->
+              <input id="switch"  type="checkbox">
+              <span class="check_switch" onclick="bldo()"></span>
+            </label>
+            <p>Yearly Billing</p><span class="discount_txt"> -25%</span>
+          </div>
+      </div>
+      <div class="sections_ mrg3"><!--  section 3 -->
+        <div class="cont_options">
+          <p><span><img src="images/icon-check.svg"></span>Unlimited websites</p>
+          <p><span><img src="images/icon-check.svg"></span>100% data ownership</p>
+          <p><span><img src="images/icon-check.svg"></span>Email reports</p>
+        </div>
+
+          <button class="tryal_button" type="submit" name="submit" >Start my trial</button> 
+      </div>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Giuliano Gacría</a>.
+    </div>
+  </div>
+  <script src="js.js"></script>
+</body>
+</html>
